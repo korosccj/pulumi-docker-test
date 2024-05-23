@@ -1,7 +1,7 @@
 pulumi-docker-test
 ==================
 
-Test case for # . 
+Test case for github issue [pulumi/pulumi-docker#1106](https://github.com/pulumi/pulumi-docker/issues/1106)
 
 Demonstrating an issue with docker.Provider caching DOCKER_HOST environment variable, preventing different users/systems from modifying pulumi stack resources when their docker daemon configurations are different. For example, when using a CI pipeline (DOCKER_HOST=tcp://localhost:2376) to build the initial stack and then trying to update the stack from a local machine (DOCKER_HOST=unix:///$HOME/.docker/run/docker.sock).
 
