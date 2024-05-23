@@ -1,0 +1,21 @@
+{
+  "name": "pulumi-docker-test",
+  "version": "1.0.0",
+  "main": "./bin/index.js",
+  "scripts": {
+    "up": "ts-node ./index.ts",
+    "destroy": "DESTROY=true ts-node ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@pulumi/docker": "^4.5.3",
+    "@pulumi/pulumi": "^3.116.1",
+    "ts-node": "^10.9.2"
+  }
+}
